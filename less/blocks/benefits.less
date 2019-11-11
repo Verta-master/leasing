@@ -1,6 +1,6 @@
 .benefits {
-  padding-top: 65px;
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 50px;
   background-color: #ECF0F2;
   background-image: url(../img/images/logo-bg.svg);
   background-repeat: no-repeat;
@@ -8,23 +8,32 @@
   background-position: top 60px right;
   
   .title {
-    max-width: 570px;
+    max-width: 600px;
+  }
+  .wrapper {
+    padding-left: 90px;
+//    padding-right: 30px;
   }
 }
 
 .benefits__columns {
   display: flex;
   justify-content: space-between;
+  margin-top: 70px;
+  
+  ul li {
+    margin-bottom: 17px;
+  }
 }
 
 .benefits__column {
   position: relative;
   width: 50%;
-  padding-right: 75px;
+  padding-right: 70px;
   
   &:nth-child(2n) {
-    padding-left: 75px;
-    padding-right: 0;
+    padding-left: 80px;
+    padding-right: 30px;
     
     &::before {
       content: "";
