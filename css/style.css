@@ -485,13 +485,13 @@ button {
 .btn:hover,
 .btn:active {
   color: #F0531E;
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0);
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
 .btn--white {
   color: #F0531E;
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0);
 }
 .btn--white:hover,
 .btn--white:active {
@@ -568,6 +568,7 @@ button {
 }
 .call {
   position: relative;
+  width: 230px;
   margin-left: 50px;
   padding-right: 20px;
 }
@@ -612,6 +613,18 @@ button {
   position: relative;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.menu__item::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  bottom: 13px;
+  right: 0;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.menu__item:last-child::before {
+  display: none;
 }
 .menu__item::after {
   content: "";
@@ -1101,4 +1114,36 @@ button {
 .form__comment a:hover,
 .form__comment a:active {
   text-decoration: none;
+}
+.footer {
+  color: #fff;
+  background-color: #102937;
+}
+.footer .menu {
+  background-color: #102937;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer .menu__item::after {
+  bottom: -1px;
+}
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.modal {
+  padding: 0;
+  color: #fff;
+  background-color: #102937;
+}
+.fancybox-close-small svg {
+  stroke: #fff;
 }

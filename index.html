@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Repo</title>
+  <title>Liberty leasing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
         <strong>Услуги лизингового брокера</strong>
       </div>
       <a href="tel:+78005383782" class="phone">8 800 538-37-82</a>
-      <a href="#" class="btn btn--white call">Заказать звонок</a>
+      <a data-fancybox="" data-src="#call" href="javascript:;" class="btn btn--white call">Заказать звонок</a>
     </div>
   </header>
   <nav class="menu">
@@ -245,7 +246,7 @@
           <li class="menu__item">
             <a href="#" class="menu__link">БЛОГ</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item menu__item--active">
             <a href="#" class="menu__link">ЛИЗИНГ</a>
           </li>
           <li class="menu__item">
@@ -257,16 +258,34 @@
         </ul>
       </div>
     </nav>
-    <div class="wrapper">
+    <div class="wrapper footer__wrap">
       <div class="logo">
-        <img src="img/images/logo.png" alt="Logo">
+        <img src="img/images/logo-white.png" alt="Logo">
         <strong>Услуги лизингового брокера</strong>
       </div>
       <a href="tel:+78005383782" class="phone">8 800 538-37-82</a>
-      <a href="#" class="call">Заказать звонок</a>
+      <a data-fancybox="" data-src="#call" href="javascript:;" class="btn btn--white call">Заказать звонок</a>
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <form action="#" class="form order__form">
+      <img src="img/images/logo-white.png" alt="Logo" class="form__img">
+      <p class="form__title">Заказать консультацию</p>
+      <div class="form__fields">
+        <input type="text" class="form__input" placeholder="Введите Имя">
+        <input type="tel" class="form__input" placeholder="Введите номер телефона">
+        <input type="checkbox" id="checkbox2" class="form__checkbox" checked="">
+        <label for="checkbox2" class="form__label">Я не робот</label>
+        <button type="submit" class="btn form__btn">Получить консультацию</button>
+        <p class="form__comment">Оставляя заявку, вы даёте согласие на <a href="#">обработку персональных данных</a>.</p>
+      </div>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 </body>
 </html>
