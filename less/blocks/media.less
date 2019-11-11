@@ -111,6 +111,13 @@
   .footer .menu {
     display: none;
   }
+  .columns .wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .columns__content {
+    width: 100%;
+  }
 }
 
 //---------------------------------------------------------
@@ -135,6 +142,7 @@
     margin-top: 0;
     padding-top: 50px;
   }
+  .about__item,
   .info__img,
   .types__item,
   .catalog__item {
@@ -154,6 +162,12 @@
     &::before {
       display: none;
     }
+  }
+  .top__title {
+    font-size: 48px;
+  }
+  .about p {
+    padding-right: 0;
   }
 }
 
@@ -185,5 +199,8 @@
   .benefits {
     background-position: bottom center;
     background-size: contain;
+  }
+  .top__title {
+    font-size: 40px;
   }
 }

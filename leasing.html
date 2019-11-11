@@ -212,5 +212,13 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  
+  <!-- Sidebar navigation -->
+  <script>
+    $('.sidebar__open').click(function() {
+      $(this).next().slideToggle();
+      $(this).parent().toggleClass('sidebar__item--active');
+    });
+  </script>
 </body>
 </html>

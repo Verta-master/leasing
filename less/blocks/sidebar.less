@@ -1,6 +1,7 @@
 .sidebar {
   width: 370px;
   max-width: 100%;
+  margin-bottom: 50px;
 }
 
 .sidebar__btn {
@@ -44,7 +45,8 @@
       display: block;
     }
     .sidebar__open {
-      transform: rotate(180deg);
+      transform: rotate(-180deg);
+      .transition();
     }
   }
 }
@@ -52,8 +54,8 @@
 .sidebar__link {
   position: relative;
   display: block;
-  padding: 10px 30px;
-  padding-right: 40px;
+  padding: 9px 30px;
+  padding-right: 50px;
   font-weight: 500;
   font-size: 16px;
   
@@ -75,12 +77,13 @@
   top: 0;
   right: 0;
   display: block;
-  width: 40px;
+  width: 50px;
   height: 40px;
   background-image: url(../img/icons/down.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 14px 9px;
+  .transition();
 }
 
 .sidebar__sublist {
@@ -90,7 +93,7 @@
   
   a {
     display: block;
-    padding: 10px 40px;
+    padding: 12px 40px;
     font-size: 16px;
     line-height: 1;
     opacity: 0.8;
